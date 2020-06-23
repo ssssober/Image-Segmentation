@@ -13,8 +13,8 @@
 + skimage
 
 ## Datasets
-1、Camvid  
-The ori **[Camvid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)** data with the size of `960*720`. In this work, we used the camvid in **[SegNet-Tutorial](https://github.com/alexgkendall/SegNet-Tutorial)** which named as `Camvid-Tutorial` in `12` classes with `480*360` size.
+1、Camvid-Tutorial  
+The ori **[Camvid](http://mi.eng.cam.ac.uk/research/projects/VideoRec/CamVid/)** data with the size of `960*720`. In this work, we used the camvid dataset in **[SegNet-Tutorial](https://github.com/alexgkendall/SegNet-Tutorial)** which named as `Camvid-Tutorial` in `12` classes with `480*360` size.
 
 ## ENet  
  
