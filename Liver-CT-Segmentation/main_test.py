@@ -25,7 +25,7 @@ cudnn.benchmark = True
 
 parser = argparse.ArgumentParser(description='seg')
 parser.add_argument('--mode', type=str, default='test', help='train or test')
-parser.add_argument('--model', default='gwcnet-g', help='select a model structure', choices=__models__.keys())
+parser.add_argument('--model', default='seg', help='select a model structure', choices=__models__.keys())
 parser.add_argument('--dataset', required=True, help='dataset name', choices=__datasets__.keys())
 parser.add_argument('--datapath', default='', help='data path')
 parser.add_argument('--channels', type=int, default=3, help='net input channels')
