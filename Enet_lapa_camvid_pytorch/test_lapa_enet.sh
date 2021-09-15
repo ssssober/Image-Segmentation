@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0 python main_test.py --mode test \
+--dataset lapa \
+--model enet \
+--channels 3 \
+--out_channels 11 \
+--logdir ./test/test_model_23_51000 \
+--datapath /data/LaPa/ \
+--testlist lapa_test_30.txt \
+--test_batch_size 1 \
+--test_crop_height 512 --test_crop_width 512 \
+--saveresult ./test/test_model_23_51000/result/

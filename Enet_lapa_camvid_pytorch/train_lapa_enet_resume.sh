@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=6 python main_train.py \
+--resume \
+--mode train \
+--in_channels 3 \
+--out_channels 11 \
+--epochs 60 \
+--lrepochs 25,30,34,40:2 \
+--dataset lapa \
+--model enet \
+--datapath /data/LaPa/ \
+--trainlist ./src/Lapa_train.txt \
+--batch_size 2 \
+--train_crop_height 512 --train_crop_width 512 \
+--logdir ./trained/trained_enet_Lapa-2 \
+--checkpoint_path ./trained/trained_enet_Lapa-2/old-2/checkpoint_23_0051000.tar \
+--save_freq 500 \
+--summary_freq 20

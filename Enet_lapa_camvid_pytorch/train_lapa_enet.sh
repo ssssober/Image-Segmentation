@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=2,3 python main_train.py \
+--mode train \
+--in_channels 3 \
+--out_channels 11 \
+--epochs 60 \
+--lrepochs 30,38,47,55:2 \
+--dataset lapa \
+--model enet \
+--datapath /data/LaPa/ \
+--trainlist ./src/Lapa_train.txt \
+--batch_size 8 \
+--train_crop_height 512 --train_crop_width 512 \
+--logdir ./trained/trained_enet_Lapa-2 \
+--save_freq 2000 \
+--summary_freq 20

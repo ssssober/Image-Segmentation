@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=2 python main_test.py --mode test \
+--dataset camvid \
+--model enet \
+--channels 3 \
+--out_channels 13 \
+--logdir ./test/test_model \
+--datapath /data/segmentation/camvid-segnet/test-data-rgb/ \
+--testlist /data/segmentation/camvid-segnet/camSegnet-test-data-50-label.txt \
+--test_batch_size 1 \
+--test_crop_height 360 --test_crop_width 720 \
+--saveresult ./test/result/
